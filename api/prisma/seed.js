@@ -255,6 +255,6 @@ async function main() {
 
 main().then((data) => {
     console.log(data)
-}).catch(() => {
+}).catch((error) => {
     console.log(error)
 })
