@@ -29,7 +29,7 @@ export const create = async ctx => {
 
         try {
             const [hunch] = await prisma.hunch.findMany({
-                where: { userId, gameId }
+                where: { userId, gameId },
             })
 
 

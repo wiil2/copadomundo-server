@@ -22,7 +22,7 @@ export const create = async (ctx) => {
     }
 }
 
-export const list = async ctx => {
+/* export const list = async ctx => {
     try {
         const users = await prisma.user.findMany()
         ctx.body = users
@@ -33,7 +33,7 @@ export const list = async ctx => {
         ctx.status = 500
     }
 
-}
+} */
 
 export const login = async ctx => {
     const [type, token] = ctx.headers.authorization.split(" ")
